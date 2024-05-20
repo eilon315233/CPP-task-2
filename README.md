@@ -146,4 +146,4 @@ This operator is not an operation on the graph but allows us to have access to t
 The function signature uses `ostream` from the standard library `std`:
 
 ```cpp
-friend std::ostream &operator<<(std::ostream &out, const Graph &g);
+friend ostream &operator<<(ostream &out, Graph &g);
