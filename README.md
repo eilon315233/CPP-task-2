@@ -11,12 +11,10 @@ The Graph library manages graphs represented as adjacency matrices. It supports 
 
 ### Functions
 
-- **Constructor: Graph()**: Initializes a new instance of the Graph class.
-- **loadGraph(vector<vector<int>> graph, bool directed)**: Loads a graph from a square matrix, validating the matrix and setting the graph's directed nature.
+- **loadGraph(vector<vector<int>> graph)**: Loads a graph and check if it squre matrix and directed ot not.
 - **printGraph()**: Outputs the graph's adjacency matrix as a string.
-- **getEdgesCount()**: Returns the number of edges, considering the graph's directed or undirected nature.
-- **getVerticesCount()**: Returns the number of vertices, which corresponds to the dimension of the adjacency matrix.
-- **isWeighted()**: Checks if the graph has any weights other than 1 or -1, indicating it is weighted.
+- **getNumberOfEdges()**: Returns the number of edges, considering the graph's directed or undirected nature.
+- **getNumberOfVertices()**: Returns the number of vertices, which corresponds to the dimension of the adjacency matrix.
 - **haveNegativeWeight()**: Determines if any edges have negative weights.
 - **getNeighbors(size_t vertex)**: Lists all vertices connected directly by an edge to the specified vertex.
 - **isDirected()**: Indicates whether the graph is directed.
@@ -27,23 +25,23 @@ The Graph library manages graphs represented as adjacency matrices. It supports 
 
 - **operator+( Graph &g1,  Graph &g2)**: Adds the weights of corresponding edges of two graphs.
 - **operator+=( Graph &g)**: Adds the weights of corresponding edges to the current graph.
-- **operator-( Graph &g1, const Graph &g2)**: Subtracts the weights of corresponding edges of two graphs.
+- **operator-( Graph &g1,  Graph &g2)**: Subtracts the weights of corresponding edges of two graphs.
 - **operator-=( Graph &g)**: Subtracts the weights of corresponding edges from the current graph.
-- **operator*(int scalar)**: Multiplies the weights of the graph by a scalar.
+- **operator *(int scalar)**: Multiplies the weights of the graph by a scalar.
 - **operator/(int scalar)**: Divides the weights of the graph by a scalar.
 - **operator*=(int scalar)**: Multiplies the weights of the graph by a scalar.
 - **operator/=(int scalar)**: Divides the weights of the graph by a scalar.
-- **operator>( Graph &g1, const Graph &g2)**: Compares two graphs to check if the first graph has more edges or vertices than the second graph.
-- **operator>=( Graph &g1, const Graph &g2)**: Compares two graphs to check if the first graph has more or equal edges or vertices than the second graph.
-- **operator<( Graph &g1, const Graph &g2)**: Compares two graphs to check if the first graph has fewer edges or vertices than the second graph.
-- **operator<=( Graph &g1, const Graph &g2)**: Compares two graphs to check if the first graph has fewer or equal edges or vertices than the second graph.
-- **operator==( Graph &g1, const Graph &g2)**: Checks if two graphs are equal.
-- **operator!=( Graph &g1, const Graph &g2)**: Checks if two graphs are not equal.
+- **operator>( Graph &g1,  Graph &g2)**: Compares two graphs to check if the first graph has more edges or vertices than the second graph.
+- **operator>=( Graph &g1,  Graph &g2)**: Compares two graphs to check if the first graph has more or equal edges or vertices than the second graph.
+- **operator<( Graph &g1,  Graph &g2)**: Compares two graphs to check if the first graph has fewer edges or vertices than the second graph.
+- **operator<=( Graph &g1,  Graph &g2)**: Compares two graphs to check if the first graph has fewer or equal edges or vertices than the second graph.
+- **operator==( Graph &g1,  Graph &g2)**: Checks if two graphs are equal.
+- **operator!=( Graph &g1,  Graph &g2)**: Checks if two graphs are not equal.
 - **operator++()**: Prefix increment operator to increase all edge weights by 1.
 - **operator++(int)**: Postfix increment operator to increase all edge weights by 1.
 - **operator--()**: Prefix decrement operator to decrease all edge weights by 1.
 - **operator--(int)**: Postfix decrement operator to decrease all edge weights by 1.
-- **operator*(const Graph &g) const**: Multiplies the adjacency matrices of two graphs.
+- **operator *( Graph &g)**: Multiplies the adjacency matrices of two graphs.
 - **operator<<(ostream &out,  Graph &g)**: Outputs the graph's adjacency matrix to an output stream.
 
 ## Graph Algorithms Library
@@ -148,4 +146,4 @@ This operator is not an operation on the graph but allows us to have access to t
 The function signature uses `ostream` from the standard library `std`:
 
 ```cpp
-friend std::ostream &operator<<(std::ostream &os, const Graph &g);
+friend std::ostream &operator<<(std::ostream &out, const Graph &g);
