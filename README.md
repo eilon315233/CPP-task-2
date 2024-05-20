@@ -1,10 +1,4 @@
-# Graphs & Operator Overloading
 
-This assignment is a continuation of the first assignment. Here, we're going to add the option for arithmetic operations by operator overloading.
-
-## Graph
-
-The graph in `Graph.cppyos can take this:
 # Graph Class and Algorithms
 
 This project includes a comprehensive `Graph` class and several sophisticated graph algorithms. It is implemented in C++ and supports both directed and undirected graphs, with capabilities for handling weighted and unweighted edges.
