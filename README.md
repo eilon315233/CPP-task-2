@@ -25,26 +25,26 @@ The Graph library manages graphs represented as adjacency matrices. It supports 
 
 ### Operator Overloading
 
-- **operator+(const Graph &g1, const Graph &g2)**: Adds the weights of corresponding edges of two graphs.
-- **operator+=(const Graph &g)**: Adds the weights of corresponding edges to the current graph.
-- **operator-(const Graph &g1, const Graph &g2)**: Subtracts the weights of corresponding edges of two graphs.
-- **operator-=(const Graph &g)**: Subtracts the weights of corresponding edges from the current graph.
+- **operator+( Graph &g1,  Graph &g2)**: Adds the weights of corresponding edges of two graphs.
+- **operator+=( Graph &g)**: Adds the weights of corresponding edges to the current graph.
+- **operator-( Graph &g1, const Graph &g2)**: Subtracts the weights of corresponding edges of two graphs.
+- **operator-=( Graph &g)**: Subtracts the weights of corresponding edges from the current graph.
 - **operator*(int scalar)**: Multiplies the weights of the graph by a scalar.
 - **operator/(int scalar)**: Divides the weights of the graph by a scalar.
 - **operator*=(int scalar)**: Multiplies the weights of the graph by a scalar.
 - **operator/=(int scalar)**: Divides the weights of the graph by a scalar.
-- **operator>(const Graph &g1, const Graph &g2)**: Compares two graphs to check if the first graph has more edges or vertices than the second graph.
-- **operator>=(const Graph &g1, const Graph &g2)**: Compares two graphs to check if the first graph has more or equal edges or vertices than the second graph.
-- **operator<(const Graph &g1, const Graph &g2)**: Compares two graphs to check if the first graph has fewer edges or vertices than the second graph.
-- **operator<=(const Graph &g1, const Graph &g2)**: Compares two graphs to check if the first graph has fewer or equal edges or vertices than the second graph.
-- **operator==(const Graph &g1, const Graph &g2)**: Checks if two graphs are equal.
-- **operator!=(const Graph &g1, const Graph &g2)**: Checks if two graphs are not equal.
+- **operator>( Graph &g1, const Graph &g2)**: Compares two graphs to check if the first graph has more edges or vertices than the second graph.
+- **operator>=( Graph &g1, const Graph &g2)**: Compares two graphs to check if the first graph has more or equal edges or vertices than the second graph.
+- **operator<( Graph &g1, const Graph &g2)**: Compares two graphs to check if the first graph has fewer edges or vertices than the second graph.
+- **operator<=( Graph &g1, const Graph &g2)**: Compares two graphs to check if the first graph has fewer or equal edges or vertices than the second graph.
+- **operator==( Graph &g1, const Graph &g2)**: Checks if two graphs are equal.
+- **operator!=( Graph &g1, const Graph &g2)**: Checks if two graphs are not equal.
 - **operator++()**: Prefix increment operator to increase all edge weights by 1.
 - **operator++(int)**: Postfix increment operator to increase all edge weights by 1.
 - **operator--()**: Prefix decrement operator to decrease all edge weights by 1.
 - **operator--(int)**: Postfix decrement operator to decrease all edge weights by 1.
 - **operator*(const Graph &g) const**: Multiplies the adjacency matrices of two graphs.
-- **operator<<(ostream &os, const Graph &g)**: Outputs the graph's adjacency matrix to an output stream.
+- **operator<<(ostream &out,  Graph &g)**: Outputs the graph's adjacency matrix to an output stream.
 
 ## Graph Algorithms Library
 
