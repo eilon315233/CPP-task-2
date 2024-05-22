@@ -439,14 +439,7 @@ TEST_CASE("Checking comparison operators")
         CHECK((g3 >= g2) == true);
     }
 }
-#include "doctest.h"
-#include "Algorithms.hpp"
-#include "Graph.hpp"
 
-using namespace std;
-using namespace ariel;
-
-// Addition-related tests
 TEST_CASE("Test graph addition") // g1 = g2 + g3
 {
     ariel::Graph g1;
